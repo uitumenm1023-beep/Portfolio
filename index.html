@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Munkhdul Uitumen — Developer</title>
+<meta name="description" data-i18n-content="meta.description" content="Munkhdul Uitumen — backend-leaning developer building mobile and web products in Ulaanbaatar, Mongolia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#hero" class="brand">MU</a>
+  <div class="navlinks">
+    <a href="#about" data-nav="about" data-i18n="nav.about">About</a>
+    <a href="#work" data-nav="work" data-i18n="nav.work">Work</a>
+    <a href="#experience" data-nav="experience" data-i18n="nav.experience">Experience</a>
+    <a href="#stack" data-nav="stack" data-i18n="nav.stack">Stack</a>
+    <a href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
+    <button id="lang-toggle" class="lang-btn" type="button" aria-label="Switch language">MN</button>
+  </div>
+</nav>
+
+<header id="hero" class="hero">
+  <div class="hero-text">
+    <p class="terminal" id="terminal" aria-hidden="true"></p>
+    <h1 data-i18n="hero.name">Munkhdul Uitumen</h1>
+    <p class="subhead" data-i18n="hero.subhead">I build the backend first, then the mobile and web layers that sit on top of it.</p>
+    <p class="hero-meta" data-i18n="hero.meta">Senior developer-in-training at MIU, finishing this fall — based in Ulaanbaatar, Mongolia.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary" data-i18n="hero.ctaWork">See my work</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">Get in touch</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="images/profile.jpg" alt="Munkhdul Uitumen"
+         onerror="this.remove(); document.getElementById('photo-placeholder').style.display='flex';">
+    <div id="photo-placeholder" class="photo-placeholder">
+      <span data-i18n="hero.photoPlaceholder">Drop your photo in<br><code>images/profile.jpg</code></span>
+    </div>
+  </div>
+</header>
+
+<main class="spine">
+
+  <section id="about" class="section">
+    <div class="rail"><span class="dot"></span></div>
+    <div class="content">
+      <h2 data-i18n="about.heading">About</h2>
+      <p data-i18n="about.p1">I'm a senior at MIU in Ulaanbaatar, graduating this fall. Most of my work happens on the backend — auth flows, database schemas, APIs — but I build the mobile and web layers that use them too, so I can take something from a blank repo to a shipped build on my own when I need to.</p>
+      <p data-i18n="about.p2">Recently that's meant Flutter apps wired to Firebase, a NestJS + GraphQL service backing a full team project, and a React site I built solo from the ground up.</p>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="rail"><span class="dot"></span></div>
+    <div class="content">
+      <h2 data-i18n="work.heading">Selected work</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>TruckCab</h3>
+          <span class="tag tag-accent" data-i18n="work.truckcab.tag">Built for Google Play</span>
+        </div>
+        <p data-i18n="work.truckcab.desc">A Flutter delivery-management app that connects sellers with drivers. I built the auth flow with email verification, wired up Firestore, and took it through release signing and a full build audit to get it store-ready.</p>
+        <ul class="stackline">
+          <li>Flutter</li><li>Firebase Auth</li><li>Firestore</li><li>Provider</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>RateThePlace</h3>
+          <span class="tag" data-i18n="work.rtp.tag">Team project · MIU</span>
+        </div>
+        <p data-i18n="work.rtp.desc">A full-stack place-rating platform, built with a small team at MIU. I worked mainly on the backend — schema design, the GraphQL API, and auth — with some frontend work on the side.</p>
+        <ul class="stackline">
+          <li>NestJS</li><li>GraphQL</li><li>MongoDB</li><li>Next.js</li><li>JWT</li>
+        </ul>
+        <a href="https://ratetheplace.vercel.app" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewLive">View live →</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3 data-i18n="work.zamyn.title">Zamyn-Uud Directory</h3>
+          <span class="tag tag-accent" data-i18n="work.zamyn.tag">Solo build · Full-stack</span>
+        </div>
+        <p data-i18n="work.zamyn.desc">A bilingual business directory for the Zamyn-Uud to Erenhot trade route, built entirely on my own — up to 1,000 listings across 10 service categories, with full CRUD and secret-code-protected entries.</p>
+        <ul class="stackline">
+          <li>React</li><li>SPA</li><li data-i18n="work.zamyn.bilingual">Mongolian / English</li>
+        </ul>
+        <a href="https://www.azumarket.com/lander" target="_blank" rel="noopener" class="project-link" data-i18n="work.viewLive">View live →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="rail"><span class="dot"></span></div>
+    <div class="content">
+      <h2 data-i18n="experience.heading">Experience</h2>
+      <article class="exp">
+        <div class="exp-head">
+          <h3 data-i18n="experience.role">Development Intern</h3>
+          <span class="exp-org">MIU — Ulaanbaatar</span>
+        </div>
+        <ul class="exp-list">
+          <li data-i18n="experience.item1">Built the university's affiliated high-school website as part of a small team of classmates, working mainly on the backend with some frontend work.</li>
+          <li data-i18n="experience.item2">Joined the RateThePlace team in the same capacity — backend first, with a share of the frontend.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="stack" class="section">
+    <div class="rail"><span class="dot"></span></div>
+    <div class="content">
+      <h2 data-i18n="stack.heading">Stack</h2>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h4 data-i18n="stack.mobile">Mobile</h4>
+          <ul class="stackline"><li>Flutter</li><li>Dart</li><li>Firebase</li><li>Provider</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="stack.web">Web</h4>
+          <ul class="stackline"><li>Next.js</li><li>React</li><li>JavaScript</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="stack.backend">Backend</h4>
+          <ul class="stackline"><li>NestJS</li><li>GraphQL</li><li>MongoDB</li><li>JWT</li></ul>
+        </div>
+        <div class="stack-group">
+          <h4 data-i18n="stack.tools">Tools</h4>
+          <ul class="stackline"><li>Git</li><li>Python</li><li>Playwright</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="rail"><span class="dot"></span></div>
+    <div class="content">
+      <h2 data-i18n="contact.heading">Contact</h2>
+      <p data-i18n="contact.intro">Reach out directly — I'll get back to you.</p>
+      <div class="contact-grid">
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="contact.email">Email</span>
+          <a href="mailto:uitumenm1023@gmail.com" class="contact-value">uitumenm1023@gmail.com</a>
+          <button class="copy-btn" data-copy="uitumenm1023@gmail.com" data-i18n="contact.copy">Copy</button>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="contact.phone">Phone</span>
+          <span class="contact-value">+976 88272822</span>
+          <button class="copy-btn" data-copy="+976 88272822" data-i18n="contact.copy">Copy</button>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/uitumenm1023-beep" target="_blank" rel="noopener" class="contact-value">github.com/uitumenm1023-beep</a>
+          <button class="copy-btn" data-copy="https://github.com/uitumenm1023-beep" data-i18n="contact.copy">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p><span data-i18n="hero.name">Munkhdul Uitumen</span> — <span data-i18n="footer.place">Ulaanbaatar, Mongolia</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
