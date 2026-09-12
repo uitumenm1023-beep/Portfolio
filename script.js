@@ -9,7 +9,6 @@ const translations = {
     "nav.stack": "Stack",
     "nav.contact": "Contact",
     "hero.name": "Munkhdul Uitumen",
-    "hero.terminalResult": "backend-leaning developer, Ulaanbaatar MN",
     "hero.subhead": "I build the backend first, then the mobile and web layers that sit on top of it.",
     "hero.meta": "Senior developer-in-training at MIU, finishing this fall — based in Ulaanbaatar, Mongolia.",
     "hero.ctaWork": "See my work",
@@ -17,7 +16,8 @@ const translations = {
     "hero.photoPlaceholder": "Drop your photo in<br><code>images/profile.jpg</code>",
     "about.heading": "About",
     "about.p1": "I'm a senior at MIU in Ulaanbaatar, graduating this fall. Most of my work happens on the backend — auth flows, database schemas, APIs — but I build the mobile and web layers that use them too, so I can take something from a blank repo to a shipped build on my own when I need to.",
-    "about.p2": "Recently that's meant Flutter apps wired to Firebase, a NestJS + GraphQL service backing a full team project, and a React site I built solo from the ground up.",
+    "about.p2": "Recently that's meant Flutter apps wired to Firebase, a NestJS + GraphQL service backing a full team project, and a React site I built solo from the ground up. I use Claude Code, an AI coding agent, on every project I build.",
+    "about.schoolLink": "More about MIU →",
     "work.heading": "Selected work",
     "work.truckcab.tag": "Built for Google Play",
     "work.truckcab.desc": "A Flutter delivery-management app that connects sellers with drivers. I built the auth flow with email verification, wired up Firestore, and took it through release signing and a full build audit to get it store-ready.",
@@ -30,6 +30,7 @@ const translations = {
     "work.zamyn.bilingual": "Mongolian / English",
     "experience.heading": "Experience",
     "experience.role": "Development Intern",
+    "experience.org": "MIU — Ulaanbaatar",
     "experience.item1": "Built the university's affiliated high-school website as part of a small team of classmates, working mainly on the backend with some frontend work.",
     "experience.item2": "Joined the RateThePlace team in the same capacity — backend first, with a share of the frontend.",
     "stack.heading": "Stack",
@@ -55,20 +56,20 @@ const translations = {
     "nav.stack": "Технологи",
     "nav.contact": "Холбоо барих",
     "hero.name": "Үйтүмэн Мөнхдөл",
-    "hero.terminalResult": "backend хөгжүүлэгч, Улаанбаатар",
     "hero.subhead": "Ихэвчлэн backend дээр ажилладаг, дараа нь үүн дээрээ тулгуурлаад mobile, web хэсгүүдийг нь хийдэг.",
-    "hero.meta": "МИУ-д ахлах курст сурдаг, энэ намар төгсөнө — Улаанбаатарт амьдардаг.",
+    "hero.meta": "ЭМ-АЙ-Ю-д ахлах курст сурдаг, 2027 оны хавар төгсөнө — Улаанбаатарт амьдардаг.",
     "hero.ctaWork": "Ажлуудыг харах",
     "hero.ctaContact": "Холбогдох",
     "hero.photoPlaceholder": "Зургаа энд байрлуул<br><code>images/profile.jpg</code>",
     "about.heading": "Миний тухай",
-    "about.p1": "Улаанбаатар дахь МИУ-д ахлах курст сурдаг, энэ намар төгсөнө. Ихэнх ажил маань backend дээр байдаг — нэвтрэлт, database, API гэх мэт — гэхдээ тэдгээрийг ашигладаг mobile, web хэсгийг нь ч бас өөрөө хийдэг. Тэгээд хоосон repo-оос эхлээд бэлэн бүтээгдэхүүн хүртэл ганцаараа гаргаж чаддаг.",
-    "about.p2": "Сүүлийн үед Firebase-тэй холбосон Flutter апп, багийн том төслийг дэмжсэн NestJS + GraphQL сервис, мөн бүрэн өөрөө хийсэн React вэбсайт дээр ажилласан.",
+    "about.p1": "Улаанбаатар дахь ЭМ-АЙ-Ю-д ахлах курст сурдаг, 2027 оны хавар төгсөнө. Ихэнх ажил маань backend дээр байдаг — нэвтрэлт, database, API гэх мэт — гэхдээ тэдгээрийг ашигладаг mobile, web хэсгийг нь ч бас өөрөө хийдэг. Тэгээд хоосон repo-оос эхлээд бэлэн бүтээгдэхүүн хүртэл ганцаараа гаргаж чаддаг.",
+    "about.p2": "Сүүлийн үед Firebase-тэй холбосон Flutter апп, багийн том төслийг дэмжсэн NestJS + GraphQL сервис, мөн бүрэн өөрөө хийсэн React вэбсайт дээр ажилласан. Бүх төслөө Claude Code agent-тай хамт хийдэг.",
+    "about.schoolLink": "ЭМ-АЙ-Ю-ийн тухай →",
     "work.heading": "Сонгосон ажлууд",
     "work.truckcab.tag": "Google Play дээр гарсан",
     "work.truckcab.desc": "Худалдагч, жолоочийг холбодог хүргэлтийн Flutter апп. Имэйлээр баталгаажуулдаг нэвтрэлт хийж, Firestore холбож, дэлгүүрт гарахад бэлэн болтол release signing, бүтэн шалгалт хийсэн.",
-    "work.rtp.tag": "Багийн төсөл · МИУ",
-    "work.rtp.desc": "МИУ-ийн жижиг багтай хамт хийсэн газар үнэлдэг full-stack платформ. Голчлон backend дээр ажилласан — database загвар, GraphQL API, нэвтрэлт — бас жаахан frontend хийсэн.",
+    "work.rtp.tag": "Багийн төсөл · ЭМ-АЙ-Ю",
+    "work.rtp.desc": "ЭМ-АЙ-Ю-ийн жижиг багтай хамт хийсэн газар үнэлдэг full-stack платформ. Голчлон backend дээр ажилласан — database загвар, GraphQL API, нэвтрэлт — бас жаахан frontend хийсэн.",
     "work.viewLive": "Шууд үзэх →",
     "work.zamyn.title": "Замын-Үүдийн Лавлах",
     "work.zamyn.tag": "Ганцаараа хийсэн · Full-stack",
@@ -76,6 +77,7 @@ const translations = {
     "work.zamyn.bilingual": "Монгол / Англи",
     "experience.heading": "Туршлага",
     "experience.role": "Хөгжүүлэгч дадлагажигч",
+    "experience.org": "ЭМ-АЙ-Ю — Улаанбаатар",
     "experience.item1": "Ангийн найзуудтайгаа багаараа их сургуулийн харьяа ахлах сургуулийн вэбсайт хийсэн — голчлон backend, жаахан frontend.",
     "experience.item2": "Мөн RateThePlace багт нэгдэж, адилхан backend-ээс эхэлж, жаахан frontend хийсэн.",
     "stack.heading": "Технологи",
@@ -95,7 +97,6 @@ const translations = {
 };
 
 let currentLang = localStorage.getItem("lang") || "en";
-let terminalDone = false;
 
 function applyLanguage(lang) {
   currentLang = lang;
@@ -118,11 +119,6 @@ function applyLanguage(lang) {
 
   const toggleBtn = document.getElementById("lang-toggle");
   if (toggleBtn) toggleBtn.textContent = lang === "en" ? "MN" : "EN";
-
-  if (terminalDone) {
-    const el = document.getElementById("terminal");
-    if (el) el.textContent = `> whoami → ${translations[lang]["hero.terminalResult"]}`;
-  }
 }
 
 document.getElementById("lang-toggle").addEventListener("click", () => {
@@ -130,38 +126,6 @@ document.getElementById("lang-toggle").addEventListener("click", () => {
 });
 
 applyLanguage(currentLang);
-
-// ---------- Terminal intro (single page-load sequence) ----------
-(function () {
-  const el = document.getElementById("terminal");
-  if (!el) return;
-
-  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const line = "> whoami";
-
-  function finish() {
-    el.textContent = `${line} → ${translations[currentLang]["hero.terminalResult"]}`;
-    el.classList.add("done");
-    terminalDone = true;
-  }
-
-  if (prefersReduced) {
-    finish();
-    return;
-  }
-
-  let i = 0;
-  function typeLine() {
-    if (i <= line.length) {
-      el.textContent = line.slice(0, i);
-      i++;
-      setTimeout(typeLine, 45);
-    } else {
-      setTimeout(finish, 350);
-    }
-  }
-  typeLine();
-})();
 
 // ---------- Scroll-spy: highlight active nav link + rail dot ----------
 (function () {
